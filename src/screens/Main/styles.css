@@ -1,0 +1,123 @@
+.mainContainer {
+  max-width: 1440px;
+  background-image: url("../../assets//images/backgound.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.girlImage {
+  padding: 0 0 0 20px;
+  width: 490px;
+  height: 580px;
+  background-image: url(../../assets/images/girlBackground.png);
+  background-size: cover;
+  background-position: center center;
+  border-radius: 30px 0 0 30px;
+  background-color: aliceblue;
+}
+
+.welcomeText {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.6);
+  color: aliceblue;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  height: 580px;
+  align-items: center;
+  background: linear-gradient(135deg, #171a57 8.11%, rgba(23, 26, 87, 0) 100%);
+  backdrop-filter: blur(15px);
+  border-radius: 0px 30px 30px 0px;
+  width: 490px;
+}
+
+.title {
+  color: var(--text-dark, #fff);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 45px;
+}
+
+@media (max-width: 960px) {
+  .mainContainer {
+    width: 100%;
+    padding-top: 0px;
+    background-image: url("../../assets//images/backgound.png");
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .girlImage {
+    padding: 0 0 0 0px;
+    max-width: 400px;
+    min-height: 580px;
+    border-radius: 30px 30px 0 0;
+    background-image: url("../../assets/images/girlBackground.png");
+  }
+  .login {
+    display: flex;
+    flex-direction: column;
+    height: 580px;
+    align-items: center;
+    background: linear-gradient(
+      135deg,
+      #171a57 8.11%,
+      rgba(23, 26, 87, 0) 100%
+    );
+    backdrop-filter: blur(15px);
+    border-radius: 0px 0 30px 30px;
+    width: 400px;
+  }
+  .welcomeText {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 390px) {
+  .mainContainer {
+    display: flex;
+    min-width: 390px;
+    padding-top: 0px;
+    background-image: url("../../assets//images/backgound.png");
+    height: 150vh;
+    flex-direction: column;
+  }
+  .girlImage {
+    width:350px ;
+    min-height: 380px;
+    border-radius: 30px 30px 0 0;
+    background-image: url(../../assets/images/girlBackground.png);
+    background-size: cover;
+    background-color: transparent;
+  }
+  .login {
+    display: flex;
+    flex-direction: column;
+    min-height: 380px;
+    align-items: center;
+    background: linear-gradient(
+      135deg,
+      #171a57 8.11%,
+      rgba(23, 26, 87, 0) 100%
+    );
+    background-size: cover;
+    backdrop-filter: blur(15px);
+    border-radius: 0px 0 30px 30px;
+    width: 350px;
+  }
+  .welcomeText {
+    margin-left: 20px;
+    font-size: 35px;
+  }
+}

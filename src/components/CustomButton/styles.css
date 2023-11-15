@@ -1,0 +1,95 @@
+.customButton {
+  cursor: pointer;
+  width: 320px;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+      180deg,
+      rgba(254, 200, 241, 0.9) -22.92%,
+      rgba(254, 200, 241, 0) 26.73%
+    ),
+    radial-gradient(137.13% 253.39% at 76.68% 66.67%, #602ea6 0%, #c977d6 100%);
+  background-blend-mode: overlay, normal;
+  box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.4),
+    0px 0px 5px 0px #fface4 inset, 0px -1px 8px 0px #9375b6 inset;
+}
+
+.disabledButton {
+  cursor: pointer;
+  width: 320px;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 48.05%,
+      rgba(255, 255, 255, 0.2) 48.9%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) -19.57%,
+      #fff 98.8%,
+      rgba(255, 255, 255, 0.22) 130.43%
+    );
+  background-blend-mode: overlay, normal;
+  box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.4),
+    0px 0px 5px 0px #fface4 inset, 0px -1px 8px 0px #9375b6 inset;
+}
+
+.customButton:hover {
+  cursor: pointer;
+  width: 320px;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+      180deg,
+      rgba(254, 200, 241, 0.9) -22.92%,
+      rgba(237, 146, 215, 0) 20.75%
+    ),
+    radial-gradient(89.95% 197.97% at 19.06% 100%, #541095 0%, #bd4ce0 100%);
+  background-blend-mode: overlay, normal;
+  box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.4),
+    0px 0px 5px 0px #fface4 inset, 0px -1px 8px 0px #9375b6 inset;
+}
+
+.disabledButton:hover {
+  cursor: pointer;
+  width: 320px;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+      180deg,
+      rgba(254, 200, 241, 0.9) -22.92%,
+      rgba(237, 146, 215, 0) 20.75%
+    ),
+    radial-gradient(89.95% 197.97% at 19.06% 100%, #541095 0%, #bd4ce0 100%);
+  background-blend-mode: overlay, normal;
+  box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.4),
+    0px 0px 5px 0px #fface4 inset, 0px -1px 8px 0px #9375b6 inset;
+}
+
+.buttonText {
+  color: #fff;
+  text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+@media (max-width: 390px) {
+  .customButton {
+    width: 280px;
+  }
+  .disabledButton {
+    width: 280px;
+  }
+  .customButton:hover {
+    width: 280px;
+  }
+
+  .disabledButton:hover {
+    width: 280px;
+  }
+}
